@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Acronym</string>
+    <string name="tv_header">Acronym Search</string>
+    <string name="tv_results">Acronym Results:</string>
+    <string name="no_data_message">No Result for Provided Acronym</string>
+    <string name="edit_text_hint">Please Enter an acronym</string>
+    <string name="btn_search">Search</string>
+    <string name="no_data_found">No data found</string>
 </resources>
