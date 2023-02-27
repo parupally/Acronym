@@ -1,6 +1,7 @@
 package com.example.acronym.models
 
 import android.os.Parcelable
+import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
 /**
@@ -8,19 +9,22 @@ import kotlinx.parcelize.Parcelize
  */
 
 @Parcelize
-data class AcronymItem(var sf: String?, var lfs: ArrayList<Lfs> = arrayListOf()) : Parcelable
+data class AcronymItem(
+    @SerializedName("sf") var sf: String?,
+    @SerializedName("lfs") var lfs: ArrayList<Lfs> = arrayListOf()
+) : Parcelable
 
 @Parcelize
 data class Vars(
-    var lf: String?,
-    var freq: Int?,
-    var since: Int?
+    @SerializedName("lf") var lf: String?,
+    @SerializedName("freq") var freq: Int?,
+    @SerializedName("since") var since: Int?
 ) : Parcelable
 
 @Parcelize
 data class Lfs(
-    var lf: String,
-    var freq: Int?,
-    var since: Int?,
-    var vars: ArrayList<Vars> = arrayListOf()
+    @SerializedName("lf") var lf: String?,
+    @SerializedName("freq") var freq: Int?,
+    @SerializedName("since") var since: Int?,
+    @SerializedName("vars") var vars: ArrayList<Vars> = arrayListOf()
 ) : Parcelable

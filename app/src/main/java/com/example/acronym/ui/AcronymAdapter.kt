@@ -7,10 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.acronym.databinding.AcronymAdapterBinding
 import com.example.acronym.models.Lfs
 
-class AcronymAdapter :
-    RecyclerView.Adapter<AcronymAdapter.ViewHolder>() {
-
-
+class AcronymAdapter : RecyclerView.Adapter<AcronymAdapter.ViewHolder>() {
     var acronymList: MutableList<Lfs> = mutableListOf()
 
     inner class ViewHolder(private val binding: AcronymAdapterBinding) :
